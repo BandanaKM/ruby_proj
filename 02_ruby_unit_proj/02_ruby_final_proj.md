@@ -1,5 +1,5 @@
 
-# Fazia's Fruit Popsicles is a popsicle store in your neighborhood. Fazia takes fresh fruit like blueberries, raspberries, watermelon, and honeydew melon and turns them into a delicious, frozen treat. Fazia hired you to write a few programs for her. # 
+# Fazia's Frozen Treats new cafe in the in neighborhood. Fazia's specialty is taking fresh fruit like blueberries, raspberries, watermelon, and honeydew melon turnING them into varieties of delicious popsicleS. Given the demand in recent months, Fazia hires you to write a few programs for her. 
 
 
 1. The first program Fazia's popsicles would like you to create tells customers about the specials and sales. 
@@ -7,8 +7,12 @@
 
 2. Create a variable `special` and set it equal to the value of `true`.
 
+```
+special = true 
+```
 
 3. Create a variable `new_item` and set it equal to the value `'Honeydew Popsicle`'. 
+
 
 
 4. Create a variable `special_price` and set it equal to a values of `4`. 
@@ -22,6 +26,8 @@
 
 7. Under the `if` block, 
 
+
+--------- THE PART ABOVE THIS LINE NEEDS ATTN -----------
 
 8. Fauzia also needs a way to calculate the supplies that she has in stock. 
 
@@ -53,12 +59,10 @@ Output all all of them to the screen so that they are downcased.
 13. Fazia decides that she wants all the tropical fruits to be in upcase. Create four variables `kiwi`, `lime`, `mango`, `pineapple`, `guava` and `banana` and set them equal to a string. 
 
 
-14. Fazia decides she wants all the fruits that start with the letter B or the letter P to be reversed. 
-
-Call the reverse method on these variables and output them to the screen. 
+14. Fazia decides she wants all the fruits that start with the letter B or the letter P to be reversed. Call the reverse method on these variables and output them to the screen. 
 
 
 15. There was a huge rainstorm and Fazia's storage freezer was flooded. She won't be able to sell the kiwi or banana popsicles until a new shipment arrives the next day. 
 
-You help her by commenting out these fruits and the output to the terminal until the new shipment arrives. 
+Help commenting out these fruits and the output to the terminal until the new shipment arrives. 
 
