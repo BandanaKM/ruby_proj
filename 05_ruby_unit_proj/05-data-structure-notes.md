@@ -3,6 +3,8 @@
 ```
 my_array = [1, 2, 3, 4, 5, 6, 7]
 ```
+my_array = [1,2,3,4,5]
+
 
 Cover the three ways to create an Array besides the literal as above.
 
