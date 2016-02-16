@@ -1,11 +1,11 @@
-SpaceBnB is a new space hospitality company that arranges overnight accomodations in space. After some recent safety concerns, including the loss of several guests in space, the company's founder hired you to write a program for SpaceBnB staff to prepare guests in the event of an emergency in space. 
+SpaceBnB is a new space hospitality company that arranges overnight accomodations in space. After some recent safety concerns, including the loss of several guests in space, the company's founder hired you to write a program for SpaceBnB staff to prepare guests in the event of an emergency. 
 
 
-1. Since many SpaceBnB guests are first time space travelers, your first program will help SpaceBnB staff to assist guests if planetary conditions become unfavorable. 
+1. Our first program will help SpaceBnB staff to assist guests if planetary conditions become unfavorable. 
 
 Write an `if` statement that outputs "Hand out sunscreen to all SpaceBnB guests" if the `daytime_temperature` is greater than 500. 
 
-Test out the statement on planet Cesium where the daytime_temp is 900.
+Test the statement on planet Cesium where the daytime_temp is 900.
 
 ```
 if daytime_temp > 500
@@ -13,8 +13,6 @@ if daytime_temp > 500
 end 
 
 daytime_temp = 900
-
-
 ```
 
 2. Write an `if` statement that outputs "Hand out sweaters to all SpaceBnb guests" if the `nightime_temp` is less than 50. 

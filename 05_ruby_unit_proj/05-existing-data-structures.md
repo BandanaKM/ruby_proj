@@ -29,7 +29,7 @@ text = gets.chomp
 ```
 
 
-3. So far we learned that we can create a new array by setting a variable equal to `Array.new` or `[]`. In addition, Ruby allows us to use methods that can create array objects out of other objects, The `.split` method when called on a string, turns a block of text into an array.
+3. So far we learned that we can create a new array by setting a variable equal to `Array.new` or `[]`. We can also use Ruby methods that can create array objects out of other objects, The `.split` method when called on a string, turns a block of text into an array.
 
 Declare a variable called `words` and set it equal to the result of calling the `.split` method on `text`. 
 
@@ -38,22 +38,21 @@ Declare a variable called `words` and set it equal to the result of calling the 
 words = text.split(" ") 
 ```
 
-Bana notes; explain how the .split method 
 
+3. We'll now start counting words using a hash. To do this, we'll use a default value, as shown here: 
 
-3. We'll now start counting words using a hash. To do this, we'll use a default value. 
 
 ```ruby
 rocks = Hash.new("granite")
 puts rocks
-# => {}
+#   => {}
 
 puts rocks[igneous]
-# => granite 
+#   => granite 
 
 ```
 
-Create a hash called `frequencies` in the editor. Give it a default value of `0`. 
+Create a hash called `frequencies` in the editor. Give it a default value of `0`. This ensures that every word in the frequencies hash has a default value of 0. 
 
 
 ```ruby
@@ -61,18 +60,16 @@ frequencies = Hash.new(0)
 ````
 
 
-4. Use an `.each` iterator to iterate over the `words` array. For each word, assume that the word is a key and the number is the value. Each time we encounter that word we increment its value by `1`.
-
-We can do this in the following way
+4. We now want to iterate over words to add each word to the frequencies hash, one at a time. We can do this by using the `+=` to increment the value of a hash. We can do this as such: 
 
 ```
-rocks = {"igneous" => 2, "sedimentary" => 3, "metamorphic" => 1}
-rocks["sedimentary"] += 1
-puts rocks["sedimentary"]
-# => 4
+rocks = {"sedimentary" => 2, "metamorphic" => 3, "igneous" => 5}
+rocks["metamorphic"] += 1
+puts rocks["metamorphic"]
+#  => 4
 ```
 
-Notice the `+=` operator increases the value of for the `sedimentary` by `1`, such that the final count is `4`. 
+Iterate over each work in the words array. For each word, assume that it is a key in to increment the word by 1.
 
 
 ```
@@ -80,17 +77,21 @@ words.each {|word| frequencies[word]+= 1}
 ```
 
 
-5. We have a hash full of `word` and `frequency` key-value pairs. 
+5. The sorting part I don't understand so much. 
 
-```
-rocks = {"igneous" => 3, "sedimentary" => 1, "metamorphic" => 2}
-rocks = rocks.sort_by do |rock, count|
+
+rocks = {"sedimentary" => 2, "metamorphic" => 4, "igneous" => 5}
+rocks = rocks.sort_by do |type, count|
   count
 end
 rocks.reverse!
-```
 
-What is going on here?
+# this is a way to get the information in the order we want it. 
+# we have a hash called colors that maps color strings to numbers. 
+
+# we sort rocks into, sedimentary, metamorphic, igenous. 
+# the sort_by method returns an array of arrays. 
+
 
 
 6. 
