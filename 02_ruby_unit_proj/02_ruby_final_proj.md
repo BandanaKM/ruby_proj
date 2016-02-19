@@ -14,7 +14,6 @@ special = true
 3. Create a variable `new_item` and set it equal to the value `'Honeydew Popsicle`'. 
 
 
-
 4. Create a variable `special_price` and set it equal to a values of `4`. 
 
 
